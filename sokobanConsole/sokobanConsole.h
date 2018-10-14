@@ -69,7 +69,7 @@ void release();
 void updateGameMap();
 
 //방향을 입력받아서 움직임
-void move(mobj *obj, int dx, int dy);
+bool move(mobj *obj, int dx, int dy);
 //움직일 수 있는지 체크
 bool canMove(mobj *obj, int dx, int dy);
 //판정함수
