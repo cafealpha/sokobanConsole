@@ -43,11 +43,8 @@ int *map;
 int *dMap;
 //플레이어 데이터
 mobj *player;
-
-
+//스테이지 데이터(샘플)
 stageData stage1;
-
-
 
 int main();
 
@@ -56,4 +53,12 @@ void update();
 void render();
 void drawMap();
 void drawPlayer();
+void release();
+
+//방향을 입력받아서 움직임
+void move(mobj *obj, int dx, int dy);
+//움직일 수 있는지 체크
+bool canMove(mobj *obj, int dx, int dy);
+
+
 
