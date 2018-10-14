@@ -72,6 +72,9 @@ void updateGameMap();
 void move(mobj *obj, int dx, int dy);
 //움직일 수 있는지 체크
 bool canMove(mobj *obj, int dx, int dy);
+//판정함수
+bool judge();
+
 
 //좌표를 입력받아 배열인덱스를 반환하는 함수
 int calcPosToIndex(int x, int y);
